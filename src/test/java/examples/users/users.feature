@@ -51,9 +51,9 @@ Feature: Automatizar el backend de Pet Store
 
     Examples:
     |idPet|
-    |1    |
-    |2    |
-    |3    |
+    |4    |
+    |84    |
+    |7    |
 
   @TEST-5 @happypath
   Scenario Outline: Verificar la Eliminacion de Mascotas de Pet Store por id - OK
@@ -64,9 +64,9 @@ Feature: Automatizar el backend de Pet Store
 
     Examples:
     |idPet|
-    |5    |
-    |10   |
-    |30   |
+    |4   |
+    |84   |
+    |7  |
 
 
   @TEST-6 @happypath
@@ -85,7 +85,7 @@ Feature: Automatizar el backend de Pet Store
     Then status 200
 
 
-  # mvn clean test -Dtest=UsersRunner -Dkarate.options="--tags @TEST-2" -Dkarate.env=cert
+  # mvn clean test -Dtest=UsersRunner -Dkarate.options="--tags @TEST-2" -Dkarate.env=dev
   # mvn clean test -Dtest=UsersRunner -Dkarate.options="--tags @TEST-2"
 
   @TEST-8 @happypath
