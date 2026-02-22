@@ -71,7 +71,7 @@ Feature: Automatizar el backend de Pet Store
 
   @TEST-6 @happypath
   Scenario: Verificar la eliminacion de Mascotas de Pet Store por id - OK
-    Given path 'pet/5'
+    Given path 'pet/6'
     When method delete
     Then status 200
     And print response
